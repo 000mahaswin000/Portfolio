@@ -15,103 +15,21 @@ export function Header() {
     }
   };
 
-  const handleResumeDownload = () => {
-    // Download a sample PDF resume
-    // In a real application, you would link to an actual PDF file
-    const link = document.createElement('a');
-    // Using a data URL for a minimal PDF
-    const pdfContent = `%PDF-1.4
-1 0 obj
-<<
-/Type /Catalog
-/Pages 2 0 R
->>
-endobj
-2 0 obj
-<<
-/Type /Pages
-/Kids [3 0 R]
-/Count 1
->>
-endobj
-3 0 obj
-<<
-/Type /Page
-/Parent 2 0 R
-/MediaBox [0 0 612 792]
-/Contents 4 0 R
-/Resources <<
-/Font <<
-/F1 5 0 R
->>
->>
->>
-endobj
-4 0 obj
-<<
-/Length 440
->>
-stream
-BT
-/F1 24 Tf
-50 750 Td
-(JOHN STELLAR) Tj
-0 -30 Td
-/F1 14 Tf
-(Master's Degree Student - Computer Science) Tj
-0 -40 Td
-(EDUCATION) Tj
-0 -20 Td
-/F1 12 Tf
-(Master of Science in Computer Science \\(2024 - Present\\)) Tj
-0 -15 Td
-(University of Technology) Tj
-0 -30 Td
-/F1 14 Tf
-(SKILLS) Tj
-0 -20 Td
-/F1 12 Tf
-(Programming: Python, JavaScript, TypeScript, C++, Java, R) Tj
-0 -15 Td
-(Machine Learning: TensorFlow, PyTorch, Scikit-learn, Keras) Tj
-0 -15 Td
-(Web Development: React, Node.js, Next.js, FastAPI) Tj
-ET
-endstream
-endobj
-5 0 obj
-<<
-/Type /Font
-/Subtype /Type1
-/BaseFont /Helvetica
->>
-endobj
-xref
-0 6
-0000000000 65535 f
-0000000009 00000 n
-0000000058 00000 n
-0000000115 00000 n
-0000000270 00000 n
-0000000760 00000 n
-trailer
-<<
-/Size 6
-/Root 1 0 R
->>
-startxref
-847
-%%EOF`;
-    
-    const blob = new Blob([pdfContent], { type: 'application/pdf' });
-    const url = window.URL.createObjectURL(blob);
-    link.href = url;
-    link.download = 'John_Stellar_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-    window.URL.revokeObjectURL(url);
-  };
+  const handleResumeDownload = (): void => {
+  // 1. Create a temporary anchor element
+  const link: HTMLAnchorElement = document.createElement('a');
+  
+  // 2. Set the path to the file in your /public folder
+  link.href = '../../assets/resume.pdf'; 
+  
+  // 3. Set the name the file will have when downloaded
+  link.download = 'D_Mahaswin_Resume.pdf'; 
+  
+  // 4. Execute the click and clean up
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
 
   return (
     <motion.header

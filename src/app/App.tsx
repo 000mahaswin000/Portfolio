@@ -5,7 +5,7 @@ import { Education } from './components/Education';
 import { Skills } from './components/Skills';
 import { Projects } from './components/Projects';
 import { Contact } from './components/Contact';
-import cosmicBg from 'figma:asset/5fb2683f218fa75d957264411c3919850bc42757.png';
+import cosmicBg from '../assets/cosmic-bg.png';
 
 export default function App() {
   return (

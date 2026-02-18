@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { Github, Linkedin, Mail } from 'lucide-react';
+import myProfilePic from '../../assets/me.jpeg';
 
 export function Hero() {
   return (
@@ -107,7 +108,7 @@ export function Hero() {
           >
             <div className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-purple-500/50 shadow-lg shadow-purple-500/50">
               <img
-                src="https://images.unsplash.com/photo-1653832154869-3fe99be65998?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhc3Ryb25hdXQlMjBoZWxtZXQlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NzEzMzA5NDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+                img src={myProfilePic}
                 alt="Profile"
                 className="w-full h-full object-cover"
               />

@@ -9,7 +9,7 @@ export function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'mahaswin290208@gmail.com',
+      value: 'gmail.com/mahaswin',
       link: 'mailto:mahaswin290208@gmail.com',
     },
     {
