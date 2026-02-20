@@ -10,7 +10,7 @@ export function Projects() {
       title: 'Hostel Management System',
       description:
         'A secure, dual-portal C application for hostel administration featuring persistent binary storage, automated maintenance ticket tracking, and robust data integrity through soft-deletion',
-      tags: ['C', 'file handling', 'data structures'],
+      tags: ['C', 'File Handling', 'Data Structures'],
       github: 'https://github.com/000mahaswin000/HOSTLE-MANAGEMENT-SYSTEM.git',
       gradient: 'from-purple-600/30 to-pink-600/30',
       demo: 'https://example.com',
