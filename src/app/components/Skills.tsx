@@ -9,25 +9,13 @@ export function Skills() {
     {
       title: 'Programming',
       icon: Code,
-      skills: ['Python', 'JavaScript', 'TypeScript', 'C++', 'Java', 'R'],
+      skills: ['Python', 'C', 'C++', 'HTML', 'CSS', 'JavaScript'],
       color: 'purple',
-    },
-    {
-      title: 'Machine Learning',
-      icon: Brain,
-      skills: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'OpenCV', 'NLP'],
-      color: 'pink',
-    },
-    {
-      title: 'Databases',
-      icon: Database,
-      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'Neo4j', 'Firebase'],
-      color: 'blue',
     },
     {
       title: 'Web Development',
       icon: Globe,
-      skills: ['React', 'Node.js', 'Next.js', 'FastAPI', 'Django', 'Tailwind'],
+      skills: ['Django', 'Flutter'],
       color: 'cyan',
     },
   ];

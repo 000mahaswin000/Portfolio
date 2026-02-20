@@ -7,41 +7,15 @@ export function Projects() {
 
   const projects = [
     {
-      title: 'Neural Network Optimizer',
+      title: 'Hostel Management System',
       description:
-        'Advanced optimization algorithms for deep learning models, achieving 30% faster convergence on benchmark datasets.',
-      tags: ['Python', 'PyTorch', 'Machine Learning'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
+        'A secure, dual-portal C application for hostel administration featuring persistent binary storage, automated maintenance ticket tracking, and robust data integrity through soft-deletion',
+      tags: ['C', 'file handling', 'data structures'],
+      github: 'https://github.com/000mahaswin000/HOSTLE-MANAGEMENT-SYSTEM.git',
       gradient: 'from-purple-600/30 to-pink-600/30',
-    },
-    {
-      title: 'Smart Recommendation Engine',
-      description:
-        'AI-powered recommendation system using collaborative filtering and deep learning techniques for personalized content suggestions.',
-      tags: ['TensorFlow', 'Python', 'React'],
-      github: 'https://github.com',
       demo: 'https://example.com',
-      gradient: 'from-blue-600/30 to-cyan-600/30',
     },
-    {
-      title: 'Natural Language Processor',
-      description:
-        'NLP tool for sentiment analysis and text classification with transformer-based architecture achieving 95% accuracy.',
-      tags: ['NLP', 'BERT', 'FastAPI'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
-      gradient: 'from-pink-600/30 to-purple-600/30',
-    },
-    {
-      title: 'Computer Vision App',
-      description:
-        'Real-time object detection and image segmentation application using state-of-the-art CNN architectures.',
-      tags: ['OpenCV', 'YOLO', 'Flask'],
-      github: 'https://github.com',
-      demo: 'https://example.com',
-      gradient: 'from-cyan-600/30 to-blue-600/30',
-    },
+    
   ];
 
   return (

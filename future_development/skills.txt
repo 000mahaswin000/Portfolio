@@ -1,0 +1,12 @@
+{
+      title: 'Machine Learning',
+      icon: Brain,
+      skills: ['TensorFlow', 'PyTorch', 'Scikit-learn', 'Keras', 'OpenCV', 'NLP'],
+      color: 'pink',
+    },
+    {
+      title: 'Databases',
+      icon: Database,
+      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'MySQL', 'Neo4j', 'Firebase'],
+      color: 'blue',
+    },
